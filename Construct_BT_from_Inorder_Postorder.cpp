@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// -> This is the code when postorder is given. Notice that we first move to the right and then left in the lines 41 and 42. 
+//    This is because in postorder, root elements are towards the right.
+// => If we are given preorder instead, then we start with p index = 0 (from the left) and move towards the left subtree first
+//    and then towards the right subtree
+
 class Node {
   public:
     int data;
